@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="tracking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Input</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Minutes</span>
+                    <input type="text" placeholder="Enter Minutes" required>
+                </div>
+                <div class="title">Output</div>
+                <div class="input-box">
+                    <span class="details">Calories</span>
+                    <input type="text" placeholder="Leave Blank" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Distance</span>
+                    <input type="text" placeholder="Leave Blank" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        <span class="dot"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        <span class="dot"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

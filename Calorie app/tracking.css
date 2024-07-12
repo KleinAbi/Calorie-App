@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 300px;  /* Adjust the width to make it smaller */
+    background: #fff;
+    padding: 20px 25px;  /* Adjust padding if necessary */
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #ccc;  /* Add border */
+    /* Centering using flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin: 20px 0 10px 0;  /* Add margin to lower the title */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 12px 0;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    height: 45px;
+    width: 95%;  /* Make the input box fill more of the form */
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #9b59b6;
+}
+
+.gender-details {
+    margin-bottom: 20px;
+}
+
+.gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+}
+
+.category label {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+.dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none; /* Hide the actual radio buttons */
+}
+
+input[type="radio"] + .dot {
+    border-color: #ccc; /* Default color for dots */
+}
+
+input[type="radio"]:checked + .dot {
+    background: #9b59b6; /* Color when selected */
+    border-color: #9b59b6; /* Border color when selected */
+}
+
+.gender {
+    font-size: 18px;
+}
+
+.button {
+    height: 45px;
+    margin: 35px 0;
+}
+
+.button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #9b59b6;
+}
+
+.button input:hover {
+    background: #7d3cae;
+}
